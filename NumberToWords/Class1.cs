@@ -19,6 +19,10 @@ namespace NumbersToWords
             {
                 word = "two";
             }
+            if (number == 3)
+            {
+                word = "three";
+            }
 
             return word; 
         }

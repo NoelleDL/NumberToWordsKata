@@ -29,5 +29,13 @@ namespace NumberToWordsTests
             string word = Converter.Convert(number);
             Assert.Equal("two", word); 
         }
+
+        [Fact]
+        public void ReturnsTwoWhenGiven3()
+        {
+            int number = 3;
+            string word = Converter.Convert(number);
+            Assert.Equal("three", word);
+        }
     }
 }
