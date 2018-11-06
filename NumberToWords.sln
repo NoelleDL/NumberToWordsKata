@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumberToWords", "NumberToWords\NumberToWords.csproj", "{BD05D5CB-170B-4321-9F2A-67B90C7EF84E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumberToWordsTests", "NumberToWordsTests\NumberToWordsTests.csproj", "{399B3EDB-C7D1-4547-838B-7CF774609671}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,5 +15,9 @@ Global
 		{BD05D5CB-170B-4321-9F2A-67B90C7EF84E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD05D5CB-170B-4321-9F2A-67B90C7EF84E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD05D5CB-170B-4321-9F2A-67B90C7EF84E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{399B3EDB-C7D1-4547-838B-7CF774609671}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{399B3EDB-C7D1-4547-838B-7CF774609671}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{399B3EDB-C7D1-4547-838B-7CF774609671}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{399B3EDB-C7D1-4547-838B-7CF774609671}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
