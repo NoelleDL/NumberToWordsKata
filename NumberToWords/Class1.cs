@@ -6,22 +6,25 @@ namespace NumbersToWords
     {
         public static string Convert(int number)
         {
+            //number = 0;
             var word = "";
-            if (number == 0)
+            switch (number)
             {
-                word = "zero";
-            }
-            if (number == 1)
-            {
-                word = "one";
-            }
-            if (number == 2)
-            {
-                word = "two";
-            }
-            if (number == 3)
-            {
-                word = "three";
+                case 0:
+                    word = "zero";
+                    break; 
+                case 1: 
+                    word = "one";
+                    break;
+                case 2:
+                    word = "two";
+                    break; 
+                case 3: 
+                    word = "three";
+                    break; 
+                default:
+                    word = "this is not a number";
+                    break;
             }
 
             return word; 
