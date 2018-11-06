@@ -4,16 +4,20 @@ namespace NumbersToWords
 {
     public class Converter
     {
-        public static string Convert(int number) 
+        public static string Convert(int number)
         {
             var word = "";
             if (number == 0)
             {
                 word = "zero";
             }
-            else 
+            if (number == 1)
             {
                 word = "one";
+            }
+            if (number == 2)
+            {
+                word = "two";
             }
 
             return word; 
