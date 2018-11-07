@@ -31,11 +31,18 @@ namespace NumberToWordsTests
         }
 
         [Fact]
-        public void ReturnsTwoWhenGiven3()
+        public void ReturnsThreeWhenGiven3()
         {
             int number = 3;
             string word = Converter.Convert(number);
             Assert.Equal("three", word);
+        }
+        [Fact]
+        public void ReturnsFourWhenGiven4()
+        {
+            int number = 4;
+            string word = Converter.Convert(number);
+            Assert.Equal("four", word);
         }
     }
 }

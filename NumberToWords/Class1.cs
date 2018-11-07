@@ -6,7 +6,6 @@ namespace NumbersToWords
     {
         public static string Convert(int number)
         {
-            //number = 0;
             var word = "";
             switch (number)
             {
@@ -21,6 +20,9 @@ namespace NumbersToWords
                     break; 
                 case 3: 
                     word = "three";
+                    break; 
+                case 4:
+                    word = "four";
                     break; 
                 default:
                     word = "this is not a number";
