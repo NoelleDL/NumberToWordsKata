@@ -26,23 +26,15 @@ namespace NumbersToWords
             {16, "sixteen"},
             {17, "seventeen"},
             {18, "eighteen"},
-            {19, "nineteen"}
+            {19, "nineteen"},
+            {20, "twenty"}
         };
 
         public static string Convert(int number)
         {
-            string word;
-            foreach (var key in numDictionary.Keys)
-            {
-                
-                if (key == number)
-                {
-                    word = numDictionary[key];
-                    return word; 
-                }
-            }
-
-            return "blah";
+                return numDictionary[number];
+           
         }
+
     }
 }
