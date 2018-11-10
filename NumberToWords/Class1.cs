@@ -32,6 +32,13 @@ namespace NumbersToWords
 
         public static string Convert(int number)
         {
+            if (number > 20)
+            {
+                var ones = number % 10;
+                var tens = number - ones;
+                return numDictionary[tens] + "-" + numDictionary[ones];
+
+            }
                 return numDictionary[number];
            
         }
