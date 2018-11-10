@@ -29,6 +29,8 @@ namespace NumberToWordsTests
         [InlineData(19, "nineteen")]
         [InlineData(20, "twenty")]
         [InlineData(21, "twenty-one")]
+        [InlineData(40, "forty")]
+        [InlineData(67, "sixty-seven")]
         public void ReturnsWordWhenGivenNumber(int number, string expected)
         {
             string word = Converter.Convert(number);
