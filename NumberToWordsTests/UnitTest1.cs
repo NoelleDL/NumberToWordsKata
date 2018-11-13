@@ -31,6 +31,8 @@ namespace NumberToWordsTests
         [InlineData(21, "twenty-one")]
         [InlineData(40, "forty")]
         [InlineData(67, "sixty-seven")]
+        [InlineData(100, "one hundred")]
+        [InlineData(101, "one hundred one")]
         public void ReturnsWordWhenGivenNumber(int number, string expected)
         {
             string word = Converter.Convert(number);

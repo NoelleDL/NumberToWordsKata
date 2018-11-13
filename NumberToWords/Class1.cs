@@ -35,17 +35,24 @@ namespace NumbersToWords
             {70, "seventy"},
             {80, "eighty"},
             {90, "ninety"},
-            {100, "one-hundred"}
+            {100, "one hundred"}
         };
 
         public static string Convert(int number)
         {
-            if (number > 20 && number % 10 != 0)
+            if (number > 20 && number < 99 && number % 10 != 0)
             {
                 var ones = number % 10;
                 var tens = number - ones;
                 return numDictionary[tens] + "-" + numDictionary[ones];
 
+            }
+
+            if (number > 100 && number % 100 != 0)
+            {
+                var ones = number % 100;
+                var hundreds = number - ones;
+                return numDictionary[hundreds] + " " + numDictionary[ones];
             }
                 return numDictionary[number];
            
